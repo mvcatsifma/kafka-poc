@@ -10,7 +10,15 @@ Starting the Stack:
 
 Creating a topic:
 
-`./kafka_2.11-2.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test`
+`./kafka_2.11-2.0.0/bin/kafka-topics.sh --zookeeper localhost:2181 --create --topic test --replication-factor 1 --partitions 1`
+
+List available topics:
+
+`./kafka_2.11-2.0.0/bin/kafka-topics.sh --zookeeper localhost:2181 --list`
+
+Delete a topic:
+
+`./kafka_2.11-2.0.0/bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic test`
 
 Send some messages:
 

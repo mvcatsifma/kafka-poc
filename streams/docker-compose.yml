@@ -10,14 +10,12 @@ services:
     environment:
       KAFKA_ADVERTISED_HOST_NAME: localhost
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_CREATE_TOPICS: "Products:1:1,Status:1:1"
     image: wurstmeister/kafka
     networks:
       default:
-    p
-
-
-    orts:
-      - "9092:9092"
+    ports:
+    - "9092:9092"
 
   zookeeper:
     image: wurstmeister/zookeeper
