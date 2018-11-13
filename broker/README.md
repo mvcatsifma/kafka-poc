@@ -1,6 +1,7 @@
 ### What is it
 
-Docker-compose for Kafka + Zookeeper. Based on [wurstmeister/kafka-docker](https://github.com/wurstmeister/kafka-docker).
+Docker-compose for a Message Broker service implemented using Kafka + Zookeeper. 
+Based on [wurstmeister/kafka-docker](https://github.com/wurstmeister/kafka-docker).
 
 ### Running
 
